@@ -18,7 +18,6 @@ const Canvas = ({ tool, stageRef }: CanvasProps) => {
         height={window.innerHeight}
         draggable={tool === "cursor"}
       >
-        {/* Здесь будут слои с фигурами */}
       </Stage>
     </div>
   );
