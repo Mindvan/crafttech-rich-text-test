@@ -1,6 +1,7 @@
-import { forwardRef } from "react";
+import { forwardRef, Ref } from "react";
+import { HtmlTextProps } from "./model/types";
 
-const HtmlText = forwardRef(({ html, id }: any, ref: any) => {
+const HtmlText = forwardRef<HTMLDivElement, HtmlTextProps>(({ html, id }, ref: Ref<HTMLDivElement>) => {
   return (
     <div
       id={`htmltext_${id}`}
